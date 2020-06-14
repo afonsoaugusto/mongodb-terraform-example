@@ -2,7 +2,7 @@
 
 Quando analisamos os [providers](https://www.terraform.io/docs/providers/index.html) disponíveis do [Terraform](www.terraform.io), podemos ver vários além dos clássicos (AWS, GCP e Microsoft Azure).
 
-Um **provider** é responsável por traduzir a implementação realizada em [HCL](https://www.terraform.io/docs/configuration/syntax.html)(notação que a engine do terraform implementa) e a API do objeto de destino seja ela um Cloud Provider ou outro item de infraestrutura.
+Um **provider** é responsável por traduzir a implementação realizada em [HCL](https://www.terraform.io/docs/configuration/syntax.html)(notação que a engine que terraform implementa) e a API do objeto de destino seja ela um Cloud Provider ou outro item de infraestrutura.
 
 E nesta definição nós temos o provider da [MongoDB Atlas](https://www.terraform.io/docs/providers/mongodbatlas/index.html), que provê uma interface com o Atlas para gerenciar os itens de infraestrutura por ele fornecido via api.
 
