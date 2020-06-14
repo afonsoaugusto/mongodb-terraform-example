@@ -90,12 +90,16 @@ Neste projeto eu utilizei somente a criação do cluster, a integração com out
 
 Configuração do provider sendo que desta forma está esperando as credenciais como variáveis, porém a mesma pode ser declarada hardcoded.
 
-    ```hcl
+    ```hcl   
     # Configure the MongoDB Atlas Provider
-    provider "mongodbatlas" {}
+    provider "mongodbatlas" {} // using v0.6.0
+
+    provider "mongodbatlas" {
+        version = "v0.5.1"
+    }
     ```
 
-A nova versão do provider não está complementamente estavel, quando interagimos com os clusters ele falha. Para acompanhamento eu abri uma issue [https://github.com/terraform-providers/terraform-provider-mongodbatlas/issues/243](https://github.com/terraform-providers/terraform-provider-mongodbatlas/issues/243) no github do projeto.
+obs: A versão atual(0.6.0) do provider não está completamente estável, quando interagimos com os clusters ele falha. Para acompanhamento eu abri uma issue [https://github.com/terraform-providers/terraform-provider-mongodbatlas/issues/243](https://github.com/terraform-providers/terraform-provider-mongodbatlas/issues/243) no github do projeto.
 
 #### Atlas Project
 
